@@ -25,7 +25,7 @@ class Classroom
       if unit.needs_replacement?
         unit.replace_tubes
         @total_replacement += 1
-        @total_cost += FluorescentTubeUnit::REPLACEMENT_COST
+        @total_cost += FluorescentTubeUnit::REPLACEMENT_COST * FluorescentTubeUnit::TUBE_COUNT
       end
     }
   end
